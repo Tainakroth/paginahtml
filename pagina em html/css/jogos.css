@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.sectionJogos {
+    width: 30%;
+    margin-left: 30px;
+    padding-left: 30px;
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+.titulo-jogos {
+    margin-bottom: 20px;
+}
+
+.nav-jogos {
+    display: flex;
+    height: 40px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.span--seta-esquerda, .span--seta-direita {
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
+
+.span--seta-esquerda {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.span--seta-direita {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.seta-esquerda, .seta-direita {
+    height: 1em;
+    stroke-width: 10px;
+    width: 21px;
+}
+
+.seta-esquerda {
+    transform: rotate(180deg);
+}
+
+.desativado {
+    stroke: rgb(204, 204, 204);
+}
+
+.buttonEsquerdo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttonDireito {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titulo-rodada {
+    display: flex;
+    width: 60%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogo {
+    height: 100px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 16px;
+}
+
+.jogo-informacoes {
+    color: #555;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6875em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.jogo-informacoes--dia {
+    font-weight: bold;
+    padding-right: 3px;
+}
+
+.jogo-informacoes--data {
+    font-weight: bold;
+    padding-right: 3px;
+}
+
+.jogo-informacoes--estadio {
+    text-align: center;
+    padding-right: 3px;
+}
+
+.jogo-informacoes--hora {
+    font-weight: bold;
+}
+
+.jogo-placar {
+    color: #333;
+    display: flex;
+    height: 4em;
+    align-items: center;
+}
+
+.jogo-placar--equipe {
+    align-items: center;
+    color: #333;
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100;
+    height: 40px;
+    line-height: 1em;
+    vertical-align: middle;
+    width: 35%;
+}
+
+.jogo-placar--equipe-mandante {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.jogo-placar--equipe-visitante {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.jogo-escudo {
+    height: 30px;
+    width: 30px;
+}
+
+.jogo-escudo--mandante {
+    margin-left: 8px;
+}
+
+.jogo-escudo--visitante {
+    margin-right: 8px;
+}
+
+.placar-box {
+    align-items: center;
+    color: #111;
+    display: flex;
+    flex-grow: 2;
+    height: 40px;
+    justify-content: center;
+    width: 30%;
+}
+
+.placar-box--valor {
+    font-size: 1.3125em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.placar-box--versus {
+    display: flex;
+    height: 8px;
+    margin: 0 5px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 9px;
+}
+
+.jogo-transmissao {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6875em;
+    font-weight: bolder;
+    color: rgb(6, 170, 72);
+    margin-bottom: 10px;
+}

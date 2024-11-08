@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Página do Brasileirão</title>
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/jogos.css">
+  <link rel="stylesheet" href="css/loaderTabela.css">
+  <link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+  <header>
+    <div class="header-topo"> 
+      <div class="header-topo--esquerda">
+          <a class="header-topo--esquerda-globo" href="https://www.globo.com/" target="_blank" rel="external">globo.com</a>
+          <a class="header-topo--esquerda-g1" href="https://g1.globo.com/" target="_blank" rel="external">g1</a>
+          <a class="header-topo--esquerda-ge" href="https://ge.globo.com/" target="_blank" rel="external">ge</a>
+          <a class="header-topo--esquerda-gshow" href="https://gshow.globo.com/" target="_blank" rel="external">gshow</a>
+          <a class="header-topo--esquerda-globoplay" href="https://vitrine.globo.com/" target="_blank" rel="external">globoplay</a>
+          <a class="header-topo--esquerda-cartola" href="https://cartola.globo.com/" target="_blank" rel="external">cartola</a>
+          <a class="header-topo--esquerda-sportv" href="https://sportv.globo.com/" target="_blank" rel="external">sportv</a>
+
+
+      </div>
+      <div class="header-topo--direita">
+          <a class="header-topo--direita-assinatura" href="">assine já</a>
+          <a href=""><button class="header-topo--direita-btnEntrar">entrar ></button></a>
+      </div>
+    </div>
+    <div class="header-principal"> 
+      <div class="header-principal--menu-lateral">
+          <div class="menu-burger">
+              <button class="btn-menu" onclick="abreFechaMenu()">
+                  <svg style="color:white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <span class="menu-texto">menu</span>
+              </button>
+          </div>
+          <div class="logo-ge">
+              <svg style="width: 35px;" id="cor-primaria" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="logo-ge-alternative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="logo-ge-alternative"><rect id="Rectangle" x="0" y="0" width="48" height="40"></rect><path d="M31.0052435,15.3074522 C31.6566348,12.9522348 33.6611565,11.2484087 36.4674174,11.2484087 C38.7724609,11.2484087 40.7769826,12.7016261 41.4283739,15.3074522 L31.0052435,15.3074522 Z M36.3170696,6.08693043 C30.0030696,6.08693043 24.7914174,11.2984957 24.7914174,18.113713 C24.7914174,25.0791913 30.0030696,30.1404957 36.6677652,30.1404957 C42.0297652,30.1404957 46.0387217,27.7852783 47.4417652,23.5258 C47.6923739,22.7741478 47.3415913,22.2229304 46.4896783,22.2229304 L42.6812435,22.2229304 C42.0297652,22.2229304 41.6288957,22.4734522 41.2280261,23.0246696 C40.2758522,24.2774522 38.8727217,24.8287565 36.9183739,24.8287565 C33.8616783,24.8287565 31.5564609,22.8743217 30.9551565,19.9178 L46.740287,19.9178 C47.4919391,19.9178 47.9428957,19.4667565 47.9428957,18.7150174 L47.9428957,18.6649304 C47.9428957,11.6493652 43.5831565,6.08693043 36.3170696,6.08693043 L36.3170696,6.08693043 Z" id="Fill-1" fill="#FFFFFF"></path><path d="M11.7762174,24.2273739 C8.61917391,24.2273739 5.96326087,21.7218087 5.96326087,18.0636348 C5.96326087,14.3553739 8.61917391,11.8998957 11.7762174,11.8998957 C14.9332609,11.8998957 17.539087,14.3553739 17.539087,18.0636348 C17.539087,21.7218087 14.9332609,24.2273739 11.7762174,24.2273739 M22.3497826,6.4878087 L18.9422174,6.4878087 C18.1904783,6.4878087 17.7395217,6.93885217 17.7395217,7.69050435 L17.7395217,8.99346087 C16.3864783,7.33972174 13.880913,6.08693913 11.3753478,6.08693913 C5.26178261,6.08693913 4.34782605e-05,11.2985043 4.34782605e-05,18.1137217 C4.34782605e-05,24.9288522 4.96108696,29.6393739 11.225,29.6393739 C14.0312609,29.6393739 16.1860435,28.3365043 17.438913,26.9834609 C17.3887391,31.7440696 14.8831739,33.8988522 10.5735217,33.8988522 C8.2683913,33.8988522 6.1136087,33.1973739 3.60804348,31.5937217 C2.95665217,31.1426783 2.20491304,31.2930261 1.85413043,31.9946783 L0.35073913,34.951287 C4.34782605e-05,35.6527652 0.100217391,36.3042435 0.801782609,36.755287 C3.90865217,38.7597217 7.56682609,39.7618957 10.7238696,39.7618957 C18.9923043,39.7618957 23.5523913,35.3020696 23.5523913,25.029113 L23.5523913,7.69050435 C23.5523913,6.93885217 23.1014348,6.4878087 22.3497826,6.4878087" id="Fill-4" fill="#FFFFFF"></path></g></g></svg>
+          </div>
+          <div class="escudo">
+              <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-shield" viewBox="0 0 16 16">
+                  <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+              </svg>                
+          </div>                            
+      </div>
+      <div class="header-principal--titulo">
+          brasileirão série a
+      </div>
+      <div class="header-principal--campo-buscar">
+          <div class="campo-buscar">
+              <svg class="lupa" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>                    
+              <input class="input-buscar" type="text" placeholder="buscar"/>
+          </div>
+      </div>
+  </div>
+  <nav class="nav-topo"> 
+      <ul>
+          <li><a href="#" id="classificacao">classificação</a></li>
+          <li><a href="https://interativos.ge.globo.com/futebol/brasileirao-serie-a/especial/simulador-do-brasileirao-2023">simulador</a></li>
+          <li><a href="https://ge.globo.com/futebol/brasileirao-serie-a/videos/">vídeos</a></li>
+          <li><a href="https://interativos.ge.globo.com/estatisticas/">estatísticas</a></li>
+          <li><a href="https://interativos.ge.globo.com/futebol/brasileirao-serie-a/ranking-var/ranking-do-var-no-brasileirao-2022">VAR</a></li>
+      </ul>
+  </nav>
+  </header>
+  <main id="containerPrincipal"> 
+    <div id="containerSuperior"></div>
+  </main>
+  <footer> 
+    <div class="footer">
+      <div class="row">
+          <div class="diretorio">
+              <div class="diretorio-esquerda">
+                  <div class="diretorio-esquerda--logos">
+                      <div class="diretorio-esquerda--logos-logo" style="height:32px;width:38px;">
+                          <a href="http://globoesporte.globo.com">
+                              <svg viewBox="0 0 38 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="logo-ge-alternative-footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="logo-ge-alternative"><rect id="Rectangle" x="0" y="0" width="38" height="32"></rect><path d="M24.2539326,13.4805891 C24.7424761,11.7141761 26.2458674,10.4363065 28.350563,10.4363065 C30.0793457,10.4363065 31.582737,11.5262196 32.0712804,13.4805891 L24.2539326,13.4805891 Z M28.2378022,6.56519783 C23.5023022,6.56519783 19.593563,10.4738717 19.593563,15.5852848 C19.593563,20.8093935 23.5023022,24.6053717 28.5008239,24.6053717 C32.5223239,24.6053717 35.5290413,22.8389587 36.5813239,19.64435 C36.7692804,19.0806109 36.5061935,18.6671978 35.8672587,18.6671978 L33.0109326,18.6671978 C32.5223239,18.6671978 32.2216717,18.8550891 31.9210196,19.2685022 C31.2068891,20.2080891 30.1545413,20.6215674 28.6887804,20.6215674 C26.3962587,20.6215674 24.6673457,19.1557413 24.2163674,16.93835 L36.0552152,16.93835 C36.6189543,16.93835 36.9571717,16.6000674 36.9571717,16.036263 L36.9571717,15.9986978 C36.9571717,10.7370239 33.6873674,6.56519783 28.2378022,6.56519783 L28.2378022,6.56519783 Z" id="Fill-1" fill="#FFFFFF"></path><path d="M9.83216304,20.1705304 C7.46438043,20.1705304 5.47244565,18.2913565 5.47244565,15.5477261 C5.47244565,12.7665304 7.46438043,10.9249217 9.83216304,10.9249217 C12.1999457,10.9249217 14.1543152,12.7665304 14.1543152,15.5477261 C14.1543152,18.2913565 12.1999457,20.1705304 9.83216304,20.1705304 M17.762337,6.86585652 L15.206663,6.86585652 C14.6428587,6.86585652 14.3046413,7.20413913 14.3046413,7.76787826 L14.3046413,8.74509565 C13.2898587,7.5047913 11.4106848,6.56520435 9.53151087,6.56520435 C4.94633696,6.56520435 1.00003261,10.4738783 1.00003261,15.5852913 C1.00003261,20.6966391 4.72081522,24.2295304 9.41875,24.2295304 C11.5234457,24.2295304 13.1395326,23.2523783 14.0791848,22.2375957 C14.0415543,25.8080522 12.1623804,27.4241391 8.9301413,27.4241391 C7.20129348,27.4241391 5.58520652,26.8980304 3.70603261,25.6952913 C3.21748913,25.3570087 2.65368478,25.4697696 2.39059783,25.9960087 L1.26305435,28.2134652 C1.00003261,28.7395739 1.07516304,29.2281826 1.60133696,29.5664652 C3.93148913,31.0697913 6.67511957,31.8214217 9.04290217,31.8214217 C15.2442283,31.8214217 18.6642935,28.4765522 18.6642935,20.7718348 L18.6642935,7.76787826 C18.6642935,7.20413913 18.3260761,6.86585652 17.762337,6.86585652" id="Fill-4" fill="#FFFFFF"></path></g></g></svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="diretorio-direita">
+              </div>
+          </div>
+          <div class="footer-service">
+              <ul class="footer-list" style="color: #fff;">
+                  <li class="footer-list--item">
+                      <a href="http://g1.globo.com/principios-editoriais-do-grupo-globo.html" title="princípios editoriais">princípios editoriais</a>
+                  </li>
+                  <li class="footer-list--item">
+                      <a href="//www.globo.com/privacidade.html">política de privacidade</a>
+                  </li>
+                  <li class="footer-list--item">
+                      <a href="https://minhaconta.globo.com" title="minha conta">minha conta</a>
+                  </li>
+                  <li class="footer-list--item">
+                      <a href="http://www.globo.com/Portal/anuncie/glb_anuncie_panfleto" title="anuncie conosco">anuncie conosco</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="Script/ajax.js"></script>
+  <script src="Script/jogos.js"></script>
+  <script src="Script/rodadas.js"></script>
+  <script src="Script/tabela.js"></script>
+  <script>
+    window.onload = function(){
+       
+        existeTabela = false;
+        existeArtilharia = false;
+      
+        loaderTabela();
+      
+        ajaxTabela();
+    } 
+
+    function loaderTabela() {
+        
+      if (existeTabela == false) {
+        $("#containerPrincipal").html('<div class="containerLoader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>');
+      }else {
+       
+        $("#containerPrincipal").html('<div id="containerSuperior"></div><div id="containerInferior"></div>');
+      }
+    } 
+  </script>
+</body>
+</html>

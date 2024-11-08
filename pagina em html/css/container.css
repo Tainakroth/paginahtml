@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#containerPrincipal {
+    width: 100%;
+    height: 100%;
+}
+
+#containerSuperior {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 10px auto 10px;
+}
+
+#containerInferior {
+    width: 80%;
+    height: 100%;
+    margin: 10px auto 10px;
+}
